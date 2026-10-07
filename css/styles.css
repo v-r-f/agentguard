@@ -1,0 +1,42 @@
+:root{--bg:#0e0c12;--pn:#171320;--pn2:#1f1a2b;--bd:#2d2639;--tx:#ebe6f0;--mu:#9b92a8;--pk:#f06fae;--pks:rgba(240,111,174,.14);--gr:#6fcf9f;--am:#e3b45f;--rd:#ef6a6a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);background-image:radial-gradient(900px 400px at 85% -10%,rgba(240,111,174,.12),transparent);color:var(--tx);font:16px/1.55 Lora,Georgia,serif}
+main{max-width:780px;margin:0 auto;padding:30px 16px 50px}
+.eye{font:12px/1 'IBM Plex Mono',monospace;letter-spacing:.18em;text-transform:uppercase;color:var(--pk)}
+h1{font:700 46px/1.05 'Cormorant Garamond',Georgia,serif;margin:10px 0 6px;letter-spacing:.01em}
+.ep{font-style:italic;color:var(--mu);margin:0 0 6px}
+.rule{height:1px;background:linear-gradient(90deg,var(--pk),transparent);margin:18px 0 26px}
+section{background:var(--pn);border:1px solid var(--bd);border-radius:6px;padding:18px;margin-bottom:16px}
+h2{font:700 22px/1.2 'Cormorant Garamond',Georgia,serif;margin:0 0 4px}
+h2 em{font-style:normal;color:var(--pk);margin-right:8px}
+.cap{color:var(--mu);font-size:14px;font-style:italic;margin:0 0 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px}
+button{font:inherit;font-size:15px;color:var(--tx);background:var(--pn2);border:1px solid var(--bd);border-radius:4px;padding:10px 12px;text-align:left;cursor:pointer;transition:.15s}
+button:hover:not(:disabled){border-color:var(--pk);background:var(--pks)}button:disabled{opacity:.45;cursor:default}
+button small{display:block;font:11px 'IBM Plex Mono',monospace;color:var(--pk);letter-spacing:.1em;text-transform:uppercase;margin-bottom:2px}
+.pri{background:var(--pk);border-color:var(--pk);color:#1a0f17;font-weight:600;text-align:center}
+.pri:hover:not(:disabled){background:#f68cc0}
+label.lm{display:flex;justify-content:space-between;font-size:15px}label.lm b{font-family:'IBM Plex Mono',monospace;color:var(--pk);font-weight:400}
+input[type=range]{width:100%;accent-color:var(--pk);margin:8px 0 16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0}
+.chip{display:flex;gap:8px;align-items:center;border:1px solid var(--bd);border-radius:20px;padding:6px 12px;font:13px 'IBM Plex Mono',monospace;cursor:pointer;color:var(--mu)}
+.chip.on{border-color:var(--pk);color:var(--tx);background:var(--pks)}
+.chip input{accent-color:var(--pk)}
+.add{display:flex;gap:8px}.add input{flex:1;min-width:0;background:var(--pn2);border:1px solid var(--bd);border-radius:4px;color:var(--tx);padding:9px 10px;font:14px 'IBM Plex Mono',monospace}
+.add input:focus{outline:1px solid var(--pk)}
+.row{display:flex;gap:12px;align-items:baseline;padding:9px 0;border-top:1px solid var(--bd)}.row:first-child{border-top:0}
+.dot{flex:none;width:9px;height:9px;border-radius:50%;background:var(--bd);transform:translateY(-1px)}
+.row b{flex:none;width:100px;font:500 12px 'IBM Plex Mono',monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--mu)}
+.row .t{flex:1;font-size:15px}
+.ok{background:var(--gr)}.warn{background:var(--am)}.bad{background:var(--rd)}
+.meter{height:4px;background:var(--bd);margin-top:8px}.meter i{display:block;height:100%;width:0;transition:width .5s}
+.dec{border-left:3px solid var(--bd);background:var(--pn2);padding:12px 14px}
+.dec .dh{font:700 24px 'Cormorant Garamond',Georgia,serif;letter-spacing:.04em}.dec p{margin:3px 0 0;color:var(--mu);font-size:15px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+.log{border-top:1px solid var(--bd);padding:9px 0;font-size:15px;word-break:break-word}
+.log small{display:block;color:var(--mu);font:11px 'IBM Plex Mono',monospace;word-break:break-all;margin-top:2px}
+.log.broken{color:var(--rd)}.log.broken small{color:var(--rd)}
+.msg{font-weight:600;margin:6px 0}code{font:12px 'IBM Plex Mono',monospace;color:var(--pk);word-break:break-all}
+.sum{margin-top:10px;font-size:14px;color:var(--mu)}.sum b{color:var(--tx)}
+.hint{margin:8px 0 0}.foot{margin:10px 0 0}
+@media(max-width:520px){h1{font-size:38px}.row b{width:84px}}

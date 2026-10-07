@@ -1,0 +1,11 @@
+{
+  "name": "agentguard",
+  "version": "1.0.0",
+  "description": "A policy, risk and audit layer that decides whether an AI agent receives authority to act.",
+  "private": true,
+  "scripts": {
+    "start": "npx serve .",
+    "test": "node tests/run.js"
+  },
+  "license": "MIT"
+}
